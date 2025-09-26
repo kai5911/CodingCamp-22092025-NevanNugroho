@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">N</div>
+                Nevan Portfolio
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Profile</a></li>
+                    <li><a href="#headquarters">Portfolio</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="welcome-message">Hi <span id="user-name">Visitor</span>, Welcome!</h1>
+            <p class="hero-subtitle">Tech enthusiast, problem solver, and lifelong learner</p>
+            <div class="name-input-section">
+                <input type="text" id="nameInput" placeholder="Enter your name">
+                <button type="button" onclick="updateWelcomeMessage()">Update Name</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-banner">
+    <div class="banner-content">
+        <h3>Hi, I’m Nevan. I Build and Design for the Web.</h3>
+        <p>Blending creativity and code to create meaningful digital experiences.</p>
+    </div>
+    </div>
+
+
+</section>
+
+<section id="about" class="about">
+    <div class="container about-content">
+        <div class="about-left card">
+            <h3>My Story</h3>
+            <p>
+                Aku seorang passionate di bidang teknologi, terutama UI/UX dan software engineering.  
+                Dari awal, aku selalu ingin membuat sesuatu yang berguna untuk orang lain dan menantang diriku sendiri untuk terus berkembang.  
+                Dalam perjalanan ini, aku belajar banyak dari project, komunitas, dan pengalaman nyata yang membuat skillku lebih matang.
+            </p>
+        </div>
+
+        <div class="about-right">
+            <div class="card">
+                <h3>My Vision</h3>
+                <p>Menciptakan karier yang bermakna lewat teknologi dan kontribusi yang berdampak bagi banyak orang.</p>
+            </div>
+            <div class="card">
+                <h3>My Mission</h3>
+                <ul>
+                    <li>Terus belajar dan mengembangkan skill</li>
+                    <li>Menerapkan ilmu secara nyata dalam project</li>
+                    <li>Berbagi knowledge ke komunitas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-center card">
+            <h3>Pendidikan</h3>
+            <p>SD : <br>Bright Kiddie</p>
+            <p>SMP : <br>Harvest Center School</p>
+            <p>SMA : - </p>
+            <p>Kuliah : -</p>
+        </div>
+
+        <div class="about-values card">
+            <h3>My Values</h3>
+            <ul>
+                <li>Excellence</li>
+                <li>Integrity</li>
+                <li>Innovation</li>
+                <li>Collaboration</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="headquarters" class="headquarters">
+    <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="coming-soon">
+            <h3>Coming Soon</h3>
+            <p>My projects will appear here in the future. Stay tuned!</p>
+        </div>
+    </div>
+</section>
+
+<section id="message" class="message-section">
+    <div class="container">
+        <h2 class="section-title">Message Us</h2>
+        <div class="message-wrapper">
+            <form class="message-form" id="messageForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="masukkan nama anda...">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                <label for="phone">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone" required placeholder="628xxxxxxxxxx">
+                <span class="error-message" id="phone-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="ketik pesan anda..."></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="messageHistory">
+                <h3>Message History</h3>
+                <div id="submissionDisplay" class="submission-display"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Nevan Portfolio. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
